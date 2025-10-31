@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">                                                                                                             /*diz ao navegador que isto é um documento HTML5*/
+<head>                                                                                                                       
+  <meta charset="UTF-8">                                                                                                     /*garante os acentos e caracteres especiais*/
+  <title>Repo Wiki - Home</title>                                                                                            /*nomo que aparece no separador*/
+  <link rel="stylesheet" href="style.css">                                                                                   /*liga o ficheiro externo de esticlo CSS*/
+  <style>                                                                                                                    
+    body {                                                                                                                 
+  margin: 0;                                                                                                                
+  padding: 0;                                                                                                                
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/1/12/R.E.P.O._cover.jpg');                                /*imagem de fundo*/
+  background-size: cover;                                                                                                    /* cobre toda a tela */                          
+  background-position: center;                                                                                               /* centraliza a imagem */
+  background-repeat: no-repeat;                                                                                              /* não repete a imagem */
+  background-color: black;                                                                                                   /*cor do fundo*/
+  height: 100vh;                                                                                                             /*define que o corpo da pagina tenha 100% altura da janela do navegador*/
+  color: #f0c040;                                                                                                            /*cor padrao do texto*/
+  font-family: Arial, sans-serif;                                                                                            /*define o tipo de letra*/
+  display: flex;                                                                                                             /*permite centralizar coisas*/
+  flex-direction: column;                                                                                                    /*coloca o titulo e botoes um por cima do outro*/
+  justify-content: center;                                                                                                   /* empurra os botões mais para baixo*/ 
+  align-items: center;                                                                                                       /* centraliza horizontalmente */
+  text-align: center;                                                                                                        /*centraliza o texto do corpo*/
+    backdrop-filter: brightness(0.8);                                                                                        /* opcional: escurece ligeiramente o fundo */
+}
+ 
+.overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    
+   
+   
+    .buttons {                                                                                                               /*Div que contem os dois botoes*/
+      position: absolute;
+      top: 60%;                                                                                                              /* muda isto para controlar a altura */
+      left: 50%;                                                                                                             /* centraliza horizontalmente */
+      transform: translate(-50%, -50%);                                                                                      /* centra os botões perfeitamente */
+      display: flex;                                                                                                         /*coloca-os lado a lado*/
+      gap: 20px;                                                                                                             /*cria espaço entre eles*/                                                                                                             
+    }
+
+    a {
+      text-decoration: none;                                                                                                 /*sem sublinhado*/
+      background-color: #222;                                                                                                /*fundo escuro*/                                                                                                                                                                                                         
+      color: #f0c040;                                                                                                        /*texto dourado*/
+      border: 1px solid #444;                                                                                                
+      padding: 15px 30px;                                                                                                    /*espaçamento interno*/
+      border-radius: 8px;                                                                                                    /*bordas arredondadas*/
+      font-weight: bold;
+      transition: all 0.3s;                                                                                                  /*efeito suave quando muda*/
+    }
+
+    a:hover {
+      background-color: #f0c040;                                                                                             /*o fundo fica dourado ao passar o rato por cima*/
+      color: #111;                                                                                                           /*o texto fica preto*/
+      transform: scale(1.05);                                                                                                /*o botao aumenta ligeirament 5%*/      
+    }
+  </style>
+</head>
+<body>
+  <div class="overlay">
+    <div class="buttons">                                                                                                    /*caixa que contem os botoes*/
+      <a href="monsters.html">Monsters</a>                                                                                   /*link que leva para a pagina dos monstro*/              
+      <a href="items.html">Items</a>                                                                                         /*link que leva para a pagina dos itens*/        
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,172 @@
+/*===== ESTILO GERAL ===== */
+body {
+      background-color: #0a0a0a;
+      color: #ddd;
+      font-family: Arial, sans-serif;
+      padding: 40px;
+      text-align: center;
+    }
+
+/*===== HOME PAGE ===== */
+.home-page {                                                                                                           
+  margin: 0;                                                                                                                
+  padding: 0;                                                                                                                
+  background-image: url('https://upload.wikimedia.org/wikipedia/en/1/12/R.E.P.O._cover.jpg');                               
+  background-size: cover;                                                                                                                           
+  background-position: center;                                                                                            
+  background-repeat: no-repeat;                                                                                              
+  background-color: black;                                                                                                   
+  height: 100vh;                                                                                                             
+  color: #f0c040;                                                                                                            
+  font-family: Arial, sans-serif;                                                                                            
+  display: flex;                                                                                                             
+  flex-direction: column;                                                                                                    
+  justify-content: center;                                                                                                    
+  align-items: center;                                                                                                       
+  text-align: center;                                                                                                        
+    backdrop-filter: brightness(0.8);                                                                                        
+}
+ 
+.home-page .overlay {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}    
+   
+    .buttons {                                                                    
+      position: absolute;
+      top:  70%; 
+      left: 28.3%;                                                                 
+      right: 50%;                                                       
+      transform: translate(-50%, -50%);                                                                                
+      display: flex;                                                                                                        
+      gap: 128px;                                                                                                                                                                                                                         
+    }
+   
+
+    a {
+      text-decoration: none;                                                                                         
+      background-color: #222;                                                                                                                                                                                                                                                                                                 
+      color: #f0c040;                                                                                                  
+      border: 1px solid #444;                                                                                                
+      padding: 15px 30px;                                                                                             
+      border-radius: 8px;                                                                                                 
+      font-weight: bold;
+      transition: all 0.3s;                                                                                              
+    }
+
+    a:hover {
+      background-color: #f0c040;                                                                                        
+      color: #111;                                                                                                 
+      transform: scale(1.05);                                                                                   
+    }
+
+/*===== ITEMS PAGE ===== */
+.items-page h1 {
+  color: #f0c040;
+  font-size: 2em;
+}
+    .item-table {
+      border-collapse: collapse;
+      width: 50%;
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .item-table th, .item-table td {
+      border: 1px solid #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .item-table th {
+      background-color: #222;
+      color: #f0c040;
+      font-weight: bold;
+    }
+
+    .item-table tr:nth-child(even) {
+      background-color: #111;
+    }
+
+    .item-table td img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+    }
+
+    h1 {
+      color: #f0c040;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+   /*===== Monsters =====*/
+body {
+      background-color: #0a0a0a;
+      color: #ddd;
+      font-family: Arial, sans-serif;
+      padding: 40px;
+    }
+
+    .monster-table {
+      border-collapse: collapse;
+      width: 100%;
+      background-color: #1a1a1a;
+      border: 1px solid #333;
+      box-shadow: 0 0 10px #000;
+    }
+
+    .monster-table th, .monster-table td {
+      border: 1px solid #333;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .monster-table th {
+      background-color: #222;
+      color: #f0c040;
+      font-weight: bold;
+    }
+
+    .monster-table tr:nth-child(even) {
+      background-color: #111;
+    }
+
+    .monster-table td img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+    }
+
+    h1 {
+      color: #f0c040;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+/*===== LINK "BACK TO HOME" =====*/
+.back-link {
+  position: fixed; /* fixa no ecrã, mesmo ao rolar */
+  top: 20px;
+  left: 20px;
+  color: #f0c040;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 16px;
+  background: none;
+  border: none;
+}
+
+.back-link:hover {
+  text-decoration: underline;
+  color: #ffd966;
+}
+
+
+
+
+
+
+
