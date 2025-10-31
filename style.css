@@ -7,6 +7,8 @@ body {
       text-align: center;
     }
 
+
+
 /*===== HOME PAGE ===== */
 .home-page {                                                                                                           
   margin: 0;                                                                                                                
@@ -61,6 +63,8 @@ body {
       transform: scale(1.05);                                                                                   
     }
 
+
+
 /*===== ITEMS PAGE ===== */
 .items-page h1 {
   color: #f0c040;
@@ -102,7 +106,9 @@ body {
       margin-bottom: 20px;
     }
 
-   /*===== Monsters =====*/
+
+
+/*===== Monsters =====*/
 body {
       background-color: #0a0a0a;
       color: #ddd;
@@ -117,6 +123,7 @@ body {
       background-color: #1a1a1a;
       border: 1px solid #333;
       box-shadow: 0 0 10px #000;
+      margin-left: -20px;
     }
 
     .monster-table th, .monster-table td {
@@ -147,6 +154,48 @@ body {
       margin-bottom: 20px;
     }
 
+
+
+/*===== LAYOUT DAS TABELAS =====*/
+.tables-container {
+  display: flex;
+  align-items: flex-start; /* Alinha o topo das duas tabelas */
+  gap: 40px; /* Espaço entre elas */
+  justify-content: center; /* Centraliza o conjunto na página */
+}
+
+
+
+/*===== TABELA DE SPAWN =====*/
+.spawn-table {
+  border-collapse: collapse;
+  background-color: #1a1a1a;
+  border: 1px solid #333;
+  box-shadow: 0 0 10px #000;
+  position: sticky;
+  top: 80px; /* Distância do topo quando faz scroll */
+  height: fit-content;
+}
+
+.spawn-table th, .spawn-table td {
+  border: 1px solid #333;
+  padding: 8px 12px;
+  text-align: center;
+}
+
+.spawn-table th {
+  background-color: #222;
+  color: #f0c040;
+  font-weight: bold;
+}
+ 
+.spawn-table td {
+  color: #ffffff; /* branco no conteúdo */
+
+}
+
+
+
 /*===== LINK "BACK TO HOME" =====*/
 .back-link {
   position: fixed; /* fixa no ecrã, mesmo ao rolar */
@@ -164,8 +213,6 @@ body {
   text-decoration: underline;
   color: #ffd966;
 }
-
-
 
 
 
