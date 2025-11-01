@@ -123,6 +123,76 @@ body {
 }
 
 
+/*===== ITEMS PAGE CATEGORIES =====*/
+.items-page .category-container {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  margin-top: 50px;
+  flex-wrap: wrap; /* para adaptar em ecrãs pequenos */
+}
+
+.items-page .category {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+
+/* === ESTILO PARA OS BOTÕES DE TEXTO === */
+.items-page .category a.category-name {
+  background-color: #222;
+  color: #f0c040;
+  border: 1px solid #444;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all 0.3s;
+  display: inline-block;
+}
+
+.items-page .category a.category-name:hover {
+  background-color: #f0c040;
+  color: #111;
+  transform: scale(1.05);
+}
+
+.items-page .category a:not(.category-name) {
+  background: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+  display: inline-block;
+  box-shadow: none;
+}
+
+
+/* === ESTILO PARA AS IMAGENS CLICÁVEIS === */
+.items-page .category img {
+  display: block;
+  max-width: 140px;
+  max-height: 140px;
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid #333;
+  box-shadow: 0 0 10px #000;
+  transition: transform 0.3s ease;
+  box-sizing: border-box;
+  background: none;
+  padding: 0;
+  border: none;
+}
+
+.items-page .category a img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+
 
 
 /*===== Monsters =====*/
