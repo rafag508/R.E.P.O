@@ -247,8 +247,17 @@ body {
 .tables-container {
   display: flex;
   align-items: flex-start; /* Alinha o topo das duas tabelas */
-  gap: 40px; /* Espaço entre elas */
+  gap: 30px; /* Espaço entre elas */
   justify-content: center; /* Centraliza o conjunto na página */
+  margin: 0 auto;
+  width: 90%;
+}
+
+.tables-container .item-table {
+  flex: 1;          /* faz ambas as tabelas terem a mesma largura proporcional */
+  min-width: 300px;
+  max-width: 800px;
+  min-height: 700px;
 }
 
 
