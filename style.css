@@ -72,7 +72,8 @@ body {
 }
     .item-table {
       border-collapse: collapse;
-      width: 50%;
+      width: auto;
+      margin: 0 auto;
       background-color: #1a1a1a;
       border: 1px solid #333;
       box-shadow: 0 0 10px #000;
